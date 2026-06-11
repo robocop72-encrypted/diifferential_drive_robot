@@ -8,6 +8,25 @@
       <uri>model://sun</uri>
     </include>
 
+    <model name="custom_arena_floor">
+      <static>true</static>
+      <pose>15.0 15.0 0.005 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>30.0 30.0 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.25 0.25 0.25 1</ambient>
+            <diffuse>0.25 0.25 0.25 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
     <model name="wall_south">
       <static>true</static>
       <pose>15.0 0.0 0.75 0 0 0</pose>
